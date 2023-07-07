@@ -12,7 +12,7 @@ permissions:
   repository-projects: write
 
 jobs:
-  graphs:
+  proxies:
     runs-on: ubuntu-latest
 
     steps:
@@ -33,5 +33,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add -A
           timestamp=$(date -u)
-          git commit -m "Updating graphs: ${timestamp}" || exit 0
+          git commit -m "Searching for proxies: ${timestamp}" || exit 0
           git push
