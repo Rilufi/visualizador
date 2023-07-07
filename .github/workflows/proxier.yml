@@ -6,6 +6,11 @@ on: push
 #    schedule:
 #        - cron: '0 10 * * *'
 
+permissions:
+  pull-requests: write
+  issues: write
+  repository-projects: write
+
 jobs:
   graphs:
     runs-on: ubuntu-latest
