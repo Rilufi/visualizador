@@ -1,11 +1,11 @@
 name: Visualizator
 
 
-on: #push
-
-  #  schedule:
-
-  #      - cron: '0 11 * * *'
+on:
+  workflow_run:
+    workflows: ["Proxeiro"]
+    types:
+      - completed
 
 
 jobs:
