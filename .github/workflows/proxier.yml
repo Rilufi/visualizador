@@ -1,8 +1,8 @@
 name: Proxeiro
 
 
-on:
-# push
+on: push
+ #push
 #    schedule:
 #        - cron: '0 10 * * *'
 
